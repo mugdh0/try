@@ -30,35 +30,51 @@
     </div>
   </nav>
 
-  <div id="tog">
+
     <div class="container" id="slideshow">
-      <div id="slidebd" class="carousel slide" data-ride="carousel">
+      <div id="slidebd" class="carousel slide" data-interval="2500" data-ride="carousel">
         <ol class="carousel-indicators">
           <li class="active" data-target="#slidebd" data-slide-to="0"></li>
           <li data-target="#slidebd" data-slide-to="1"></li>
           <li data-target="#slidebd" data-slide-to="2"></li>
+          <li data-target="#slidebd" data-slide-to="3"></li>
+          <li data-target="#slidebd" data-slide-to="4"></li>
 
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img src="images/bdFoods1.jpg" class="d-block img-fluid" alt="First Slide">
-            <div class="carousel-caption">
-              <h2>“Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”</h2>
+            <img class="slidemg" src="images/bdfoods4.jpg" class="d-block img-fluid" alt="First Slide">
+            <div class="carousel-caption captionBack">
+              <h2 class="captionh2">“Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”</h2>
               <p>― Ruth Reichl</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/german1.jpg" class="d-block img-fluid" alt="secound Slide">
-            <div class="carousel-caption">
-              <h2>“If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.”</h2>
+            <img class="slidemg" src="images/rostedSlide.jpg" class="d-block img-fluid" alt="secound Slide">
+            <div class="carousel-caption captionBack">
+              <h2 class="captionh2">“If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.”</h2>
               <p>― J.R.R. Tolkien</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/bdFoods2.jpg" class="d-block img-fluid" alt="third Slide">
-            <div class="carousel-caption">
-              <h2>“There are people in the world so hungry, that God cannot appear to them except in the form of bread.”</h2>
+            <img class="slidemg" src="images/kacchiSlide.jpg" class="d-block img-fluid" alt="third Slide">
+            <div class="carousel-caption captionBack">
+              <h2 class="captionh2">“There are people in the world so hungry, that God cannot appear to them except in the form of bread.”</h2>
               <p>― Mahatma Gandhi</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="slidemg" class="slidemg" src="images/dumplingsSlide.jpg" class="d-block img-fluid" alt="fourth Slide">
+            <div class="carousel-caption captionBack">
+              <h2 class="captionh2">“Let food be thy medicine and medicine be thy food.”</h2>
+              <p>― Hippocrates</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="slidemg" src="images/elishSlide.jpg" class="d-block img-fluid" alt="fifth Slide">
+            <div class="carousel-caption captionBack">
+              <h2 class="captionh2">“One cannot think well, love well, sleep well, if one has not dined well.”</h2>
+              <p>― Virginia Woolf, A Room of One's Own</p>
             </div>
           </div>
         </div>
@@ -70,8 +86,23 @@
         </a>
       </div>
     </div>
+    <!-- <div class="container">
+      <h1 style="text-align: center;">About App</h1>
+      <div class="row" style="text-align: center;">
+        <div class="col">
+          <h3>Recipe List</h3>
+          <p>Two types of Recipe list Added <br>
+          <b>1. Bangladeshi</b><br>
+          <b>2. German</b> <br>
+            </p>
+        </div>
+        <div class="col">
+          <h3>dkjfbkd</h3>
+          <p>ajsbafavbah</p>
+        </div>
+      </div>
+    </div> -->
 
-  </div>
   <div class="container-fluid">
     <div class="row" id="left-side">
       <section class="" id="left_side_bar">
@@ -412,11 +443,7 @@
 <script>
 var c=0; //toggling between slide to left bar
 var d=0;
-var e;
-var f;
-var g;
-var h;
-var i;
+
   $("#bangladesh").click(function(){
     if(c==0){
 
@@ -502,7 +529,6 @@ var i;
     });
     $("#rosted").hide();
     $("#dumplings").hide();
-    g=0;
   });
   $("#beef_detailsClose").click(function(){
     $("#kacchi").hide();
@@ -528,7 +554,7 @@ var i;
     $("#rosted").hide();
     $("#dumplings").hide();
     $("#elish").hide();
-    h=0;
+
   });
   $("#kacchi_detailsClose").click(function(){
     $("#kacchi").hide(.00001,function(){
@@ -554,7 +580,7 @@ var i;
     $("#rosted").hide();
     $("#dumplings").hide();
     $("#kacchi").hide();
-    i=0;
+
   });
   $("#elish_detailsClose").click(function(){
     $("#elish").hide(.00001,function(){
@@ -605,7 +631,6 @@ var i;
       c=0;
       d=0;
     });
-    f=0;
   });
   $("#dumplings_detailsClose").click(function(){
     $("#rosted").hide();
