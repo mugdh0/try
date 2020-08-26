@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recipe</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/mycss.css" type="text/css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <div class="container">
+
+      <a class="navbar-brand" href="#"><img class="navlogo img-align-center" src="images/navlogop.png" alt=""></a>
+      <ul class="navbar-nav">
+        <li class="nav-item" ><a  class="nav-link" href="#">About</a>  </li>
+        <li class="nav-item" ><a  class="nav-link" href="#">Login</a>  </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="tog">
+    <div class="container" id="slideshow">
+      <div id="slidebd" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#slidebd" data-slide-to="0"></li>
+          <li data-target="#slidebd" data-slide-to="1"></li>
+          <li data-target="#slidebd" data-slide-to="2"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="images/bdFoods1.jpg" class="d-block img-fluid" alt="First Slide">
+            <div class="carousel-caption">
+              <h2>“Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”</h2>
+              <p>― Ruth Reichl</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/german1.jpg" class="d-block img-fluid" alt="secound Slide">
+            <div class="carousel-caption">
+              <h2>“If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.”</h2>
+              <p>― J.R.R. Tolkien</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/bdFoods2.jpg" class="d-block img-fluid" alt="third Slide">
+            <div class="carousel-caption">
+              <h2>“There are people in the world so hungry, that God cannot appear to them except in the form of bread.”</h2>
+              <p>― Mahatma Gandhi</p>
+            </div>
+          </div>
+        </div>
+        <a href="#slidebd" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slidebd" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="row" id="left-side">
+      <section class="" id="left_side_bar">
+
+        <div class="menu">
+          <ul>
+            <li class="btn btn-primary" id="america">American</li>
+            <li class="btn btn-primary" id="german">German</li>
+            <li class="btn btn-primary" id="bangladesh">Bangladeshi</li>
+          </ul>
+
+        </div>
+
+      </section>
+
+      <section id="fda_product_tile" class="col-2">
+        <div class="collapse" id="bd">
+
+          <div class="row fda_food_row">
+              <div class="col-9" id="bv">
+                  <div class="food_tile">
+                      <img src="images/beef_vuna.jpg" alt="" class="fda_product_img">
+                      <span class="food_name">Beef Vuna </span><br>
+                      <span class="food_detail">It is one of famous traditional dish of Bangladesh. Mostly in Chittagong.. </span><br>
+                      <button type="button" class="btn btn-sm btn-default" id="beef_details" >Recipe Details</button>
+                  </div>
+              </div>
+              <div class="col-9" id="kc">
+                  <div class="food_tile">
+                      <img src="images/kacchi.jpg" alt="" class="fda_product_img">
+                      <span class="food_name">Kacchi Biriani </span><br>
+                      <span class="food_detail">Mutton Kacchi Biryani recipe is the highly attractive to the food lovers.. </span><br>
+                      <button type="button" class="btn btn-sm btn-default" id="kacchi_details" >Recipe Details</button>
+                  </div>
+              </div>
+              <div class="col-9" id="el">
+                  <div class="food_tile">
+                      <img src="images/elishlogo.jpg" alt="" class="fda_product_img">
+                      <span class="food_name">Elish polau </span><br>
+                      <span class="food_detail">Bangladesh is land of rivers. Most tasty fish is Elish. it is a compact dish </span><br>
+                      <button type="button" class="btn btn-sm btn-default" id="elish_details" >Recipe Details</button>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+
+        <div id="beef_vuna" class="collapse">
+            <div class="container">
+              <h2 class="font-weight-bold">Delicious Beef Bhuna <button type="button" class="btn btn-outline-danger closebtn" id="beef_detailsClose"> close </button></h2>
+              <br>
+              <img class="bigImg" src="images/beef_full.jpg" alt="" class="img-fluid">
+
+              <div class="row">
+                <div class="col">
+                  <ul class="list-group ingre">
+                    <h3 class="font-weight-bold">Ingredients</h3>
+                    <br>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2</span> tbsp Oil <input class="check" type="checkbox" value=""> </li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1</span>  kg Meat< <input class="check" type="checkbox" value="">/li>
+                    <li class="list-group-item"><span class="badge badge-warning"> to </span>  taste Salt <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1</span>  tsp Red Chilli Powder <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/2</span>  tsp Turmeric <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1</span>  tsp Coriander <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1</span>  tbsp Garlic Ginger Paste <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/2</span> cup Sliced Onion <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 10</span>  pcs Green chilli <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 3</span>  tbsp Mustard oil <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2</span>  tbsp Dark Soy Sauce <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1</span>  pc Mace <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2</span>  pcs Cinnamon <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 4</span>  pcs Cardamoms <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 6</span>  pcs Black Pepper <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2</span>  pcs Bay Leaves <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/2</span>  Cup Plain Yoghurt <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/2</span>  cup Fried Onion <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/4</span>  Cup Onion Cube <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1</span>  tbsp Ghee <input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1</span>  TSP Kala Bhuna Masala Mix <input class="check" type="checkbox" value=""></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="list-group step">
+                    <h3 class="font-weight-bold">Steps</h3>
+                    <br>
+                    <li class="list-group-item"><span class="badge badge-danger">01</span> Add oil, meat, salt, red chilli powder, turmeric powder, coriander, garlic ginger paste, sliced onion, green chilli (4 pcs), mustard oil (2 tbsp), dark soy sauce, mace, cinnamon, cardamom, cloves, black pepper, bay leaves, plain yogurt and saute for 5-10 mins. </li>
+                    <li class="list-group-item"><span class="badge badge-danger">02</span> Then add fried onion and cover it to cook for 3 hrs or you can put them inside a pressure cooker and cook for 20-30 mins. Once cooked then keep stirring until all water dries up.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">03</span> Heat oil in another fry pan, add mustard oil, ghee, onion cube, green chilli. Add cooked beef and stirring continuously.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">04</span> Next add kala vuna masala mix (raw cumin 1 tsp, nutmeg 1/4, mace 2 pcs, cloves 6 pcs, black pepper 1 tsp, green cardamom 6 pcs, cinnamon 3 pcs, yellow mustard seeds 1 tsp; Roast and grind all spice together).</li>
+                    <li class="list-group-item"><span class="badge badge-danger">05</span> Turn off flame and transfer to a serving plate. Garnish with fried onion. Serve with steamed rice or paratha or roti.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">let's eat</span> you will love the dish </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="kacchi" class="collapse">
+            <div class="container">
+              <h2 class="font-weight-bold">Traditional Kacchi<button type="button" class="btn btn-outline-danger closebtn" id="kacchi_detailsClose" >close</button></h2>
+              <br>
+              <img class="bigImg" src="images/kacchi2.jpg" alt="" class="img-fluid">
+              <div class="row">
+                <div class="col">
+                  <ul class="list-group ingre">
+                    <h3 class="font-weight-bold">Ingredients</h3>
+                    <br>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2 </span> lb mutton<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1 </span> teaspoon ginger paste<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2 </span> teaspoon garlic paste<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 3-4</span> dry red chili<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2-3</span> stick of cinnamon, half inches each<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 4-5</span> green cardamom<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1 </span> teaspoon cumin<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> ½ </span> teaspoon cloves<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> ½ </span> teaspoon mace<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> ⅛ </span> teaspoon nutmeg<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 6-8</span> allspice (optional)<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> ½ </span> teaspoon caraway seed (optional)<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 3 </span> tablespoon yogurt<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> ¾ </span> cup ghee or butter<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> 5 </span> medium potato<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> pinch</span> of orange food color (optional)<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> ½ </span> cup onion, thinly sliced<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> 4 </span> cups basmati or kalijeera rice (I use a 160ml cup to measure my rice. Adjust accordingly)<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> 6 </span> cups water<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> ½ </span> cup condensed milk<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> 2 </span> tablespoon milk<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> pinch</span> of saffron<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> 10-12</span> alubokhara (pitted prunes)<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> 4 </span> eggs, hard boiled<input class="check" type="checkbox" value=""></li>
+                      <li class="list-group-item"><span class="badge badge-warning"> Salt,</span> according to taste<input class="check" type="checkbox" value=""></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="list-group step">
+                    <h3 class="font-weight-bold">Steps</h3>
+                    <br>
+                    <li class="list-group-item"><span class="badge badge-danger">01</span >Steps to prepare the meat:</li>
+                    <li class="list-group-item"><span class="badge badge-danger">02</span> Sprinkle some salt on the meat and let stand for 15-20 minutes. Wash the meat and drain all water.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">03</span> Take all the spice from red chili to caraway seed, grind.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">04</span> Take the pot where biryani will be cooked. Add the meat and yogurt, ground spice mix, garlic and ginger paste and salt. Marinate for anywhere between 30 minutes to overnight(see notes).</li>
+                    <li class="list-group-item"><span class="badge badge-danger">05</span> Steps to prepare the onion:</li>
+                    <li class="list-group-item"><span class="badge badge-danger">06</span> Add about 3 tablespoon of butter/ghee on a frying pan on medium heat.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">07</span> Add very thinly sliced onion and sautee until fragrant and golden brown.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">08</span> Steps to prepare the potato:</li>
+                    <li class="list-group-item"><span class="badge badge-danger">09</span> Wash, peel and cut the potato in big chinks. Usually into 3 pieces for a medium Idaho potato.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">10</span> If using, rub some orange food color to the potato.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">11</span> Sprinkle some salt.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">13</span> Fry the potatoes until slightly golden on the same pan used for the onion.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">14</span> Steps to prepare the rice:</li>
+                    <li class="list-group-item"><span class="badge badge-danger">15</span> Wash rice and drain all water.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">16</span> Boil 6 cups of water. Add salt.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">17</span> Add the rice.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">18</span> Turn off the stove at the first sight of water boiling again (bubble forming on the water) after adding the rice. Rice will be uncooked at this point.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">19</span> Drain the rice completely saving the drained hot water in another clean pot.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">20</span> Steps to assemble the biryani layers and cook:</li>
+                    <li class="list-group-item"><span class="badge badge-danger">21</span> Preheat oven to 350 degrees Fahrenheit.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">22</span> Soak the saffron to the milk.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">23</span> Add butter/ghee to 1 cup of hot water that was set aside in the rice preparing step.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">24</span> Add the prepared potatoes on top of the marinated meat.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">25</span> Sprinkle some fried onion.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">26</span> Add the alubokhara(prunes), if using.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">27</span> Add half the water-butter mixture.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">28</span> Layer in the prepared rice.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">29</span> Sprinkle the saffron milk.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">30</span> Make 4-5 indentations from the rice layer through the potato till the meat.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">31</span> Add the condensed milk through the indentations.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">32</span> Sprinkle the remaining water-butter mixture.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">33</span> Sprinkle the remaining fried onion.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">34</span> Add the remaining hot water in a way that water doesn’t go above the rice layer. You may not need to use all of the hot water.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">35</span> Cook in the oven for 1.5 hours.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">36</span> Add the hard boiled eggs.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">37</span> Serve with salad, kabab and chutney.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">Let's Eat</span> You Will love The dish</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="elish" class="collapse">
+            <div class="container">
+              <h2 class="font-weight-bold">Elish Polau<button type="button" class="btn btn-outline-danger closebtn" id="elish_detailsClose" >close</button></h2>
+              <br>
+              <img class="bigImg" src="images/elish_big.jpg" alt="" class="img-fluid">
+              <div class="row">
+                <div class="col">
+                  <ul class="list-group ingre">
+                    <h3 class="font-weight-bold">Ingredients</h3>
+                    <br>
+                    <li class="list-group-item"><span class="badge badge-warning"> 5  </span> pcs ‏Hilsa fish<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1  </span> tsp each ‏Ginger-garlic paste<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/3 </span> cup ‏Chopped onion<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 8-10 </span> pcs ‏Green chilies<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/2 </span> tsp ‏Red chili powder<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/2 </span> cup ‏Sour yogurt<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 3  </span> pcs ‏Cinnamon<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 2  </span> pcs ‏Cardamom<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1  </span> pc ‏Bay leaf<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> To </span> taste ‏Salt<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1  </span> tsp or to taste ‏Sugar<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1/2 </span> cup ‏Vegetable/Soybean oil<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> 1  </span> tbsp ‏Ghee<input class="check" type="checkbox" value=""></li>
+                    <li class="list-group-item"><span class="badge badge-warning"> As </span> required ‏Crispy fried onion<input class="check" type="checkbox" value=""></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="list-group step">
+                    <h3 class="font-weight-bold">Steps</h3>
+                    <br>
+                    <li class="list-group-item"><span class="badge badge-danger">01</span> Cut hilsa fish into pieces. Wash and drain properly. Use a tissue paper to soak excess water.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">02</span> Now heat oil in a pan. Add chopped onion and sliced green chilies. Fry for sometimes till tender. Then add ginger-garlic pastes, red chili powder, beaten sour yogurt, salt and cook for 2 to 3 minutes till oil release. Then add fish and cook with the lid.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">03</span> After 2 minutes carefully flip the fish over and cook for another 2 minutes. Now add some water and some fried onion. Cook fish for another 5 minutes. Then carefully take the fish out of the pan and let the spices remain. Keep the fish aside.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">04</span> Now add cinnamon, cardamom and bay leaf, stir for a while and add pre-washed & drained rice. Keep stirring and fry in medium-low heat for 2 to 3 minutes till the rice makes sound. Then add 6 cups of water. Add salt and sugar. Cook in medium heat with the lid. When water is dried add and hide fish pieces into the rice. Spread 1 tbsp ghee and sprinkle some crispy fried onions on the top.</li>
+                    <li class="list-group-item"><span class="badge badge-danger">05</span> Now cover with the lid and keep it for 5 minutes on very low flame. After 5 minutes turn the flame off and leave it for another 5 minutes covered. Take the fish pieces out of the rice carefully and lift the rice up & down. Serve hilsa pilaf rice warm with salad.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+
+    </div>
+
+    <?----GERMAN -->
+    <div class="container-fluid secC">
+      <div class="row" id="left-side">
+    <section id="fda_product_tile" class="col-2 gar">
+      <div class="collapse" id="gr">
+
+        <div class="row fda_food_row">
+            <div class="col-9" id="rc">
+                <div class="food_tile">
+                    <img src="images/roasted_chicken.jpg" alt="" class="fda_product_img">
+                    <span class="food_name">Roasted Chicken</span><br>
+                    <span class="food_detail">This oven-roasted chicken served commonly in Bavarian Biergartens, small shops, and food carts.</span><br>
+                    <button type="button" class="btn btn-sm btn-default" id="rosted_details" >Recipe Details</button>
+                </div>
+            </div>
+            <div class="col-9" id="dum">
+                <div class="food_tile">
+                    <img src="images/germanlogo.jpg" alt="" class="fda_product_img">
+                    <span class="food_name">Spaetzle Dumplings </span><br>
+                    <span class="food_detail">Traditional German dumplings.</span><br><br><br>
+                    <button type="button" class="btn btn-sm btn-default" id="dumplings_details">Recipe Details</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+      <div id="rosted" class="collapse">
+          <div class="container">
+            <h2 class="font-weight-bold">Famous Roasted Chicken <button type="button" class="btn btn-outline-danger closebtn" id="rosted_detailsClose" >close</button>
+            </h2>
+            <img class="bigImg" src="images/roasted_big.jpg" alt="" class="img-fluid">
+            <div class="row">
+              <div class="col">
+                <ul class="list-group ingre">
+                  <h3 class="font-weight-bold">Ingredients</h3>
+                  <br>
+                  <li class="list-group-item"><span class="badge badge-warning"> 1 </span> teaspoon kosher salt<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ½ </span> teaspoon caraway seeds<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ½ </span> teaspoon dried sage<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ¼ </span> teaspoon fennel seeds<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ¼ </span> teaspoon coriander seeds<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ¼ </span> teaspoon dried rosemary<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 2 </span> tablespoons paprika<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 2 </span> teaspoons garlic powder<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 2 </span> teaspoons all-purpose flour<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 1 </span> teaspoon onion powder<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 5 </span> tablespoons vegetable oil<<input class="check" type="checkbox" value="">/li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 1 </span> (4 pound) broiler-fryer chicken, cut in half lengthwise<input class="check" type="checkbox" value=""></li>
+
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-group step">
+                  <h3 class="font-weight-bold">Steps</h3>
+                  <br>
+                  <li class="list-group-item"><span class="badge badge-danger"> 01 </span> Preheat oven to 425 degrees F (220 degrees C). </td>
+                  <li class="list-group-item"><span class="badge badge-danger"> 02 </span> In a spice grinder or mortar, combine kosher salt, caraway seeds, sage, fennel, coriander, and rosemary. Grind to a coarse powder. Transfer spice mixture to a bowl and stir in paprika, garlic powder, flour, and onion powder; mix in vegetable oil to make a smooth paste.</td>
+                  <li class="list-group-item"><span class="badge badge-danger"> 03 </span> Pat chicken halves dry with paper towels and tuck wing tips up behind the back. Brush spice paste onto chicken halves, coating both sides, taking care to season under wings and legs. Place chicken halves in baking dish or roasting pan with skin sides up, leaving space around chicken so halves aren't touching.</td>
+                  <li class="list-group-item"><span class="badge badge-danger"> 04 </span> Roast in preheated oven until a thermometer inserted in a thigh reads 165 degrees F (74 degrees C), about 1 hour. Remove from oven and let rest for 10 minutes before slicing.</td>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="dumplings" class="collapse">
+          <div class="container">
+            <h2 class="font-weight-bold">Traditional German dumplings <button type="button" class="btn btn-outline-danger closebtn" id="dumplings_detailsClose" >close</button></h2>
+            <br>
+            <img class="bigImg" src="images/germanBig.jpg" alt="" class="img-fluid">
+            <div class="row">
+              <div class="col">
+                <ul class="list-group ingre">
+                  <h3 class="font-weight-bold">Ingredients</h3>
+                  <br>
+                  <li class="list-group-item"><span class="badge badge-warning"> 1 </span> cup all-purpose flour<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ¼ </span> cup milk<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 2 </span> large eggs eggs<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ½ </span> teaspoon ground nutmeg<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 1 </span> pinch freshly ground white pepper<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> ½ </span> teaspoon salt<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 1 </span> gallon hot water<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 2 </span> tablespoons butter<input class="check" type="checkbox" value=""></li>
+                  <li class="list-group-item"><span class="badge badge-warning"> 2 </span> tablespoons chopped fresh parsley<input class="check" type="checkbox" value=""></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-group step">
+                  <h3 class="font-weight-bold">Steps</h3>
+                  <br>
+                  <li class="list-group-item"><span class="badge badge-danger"> 02 </span> Press dough through spaetzle maker, or a large holed sieve or metal grater.</li>
+                  <li class="list-group-item"><span class="badge badge-danger"> 03 </span> Drop a few at a time into simmering liquid. Cook 5 to 8 minutes. Drain well.</li>
+                  <li class="list-group-item"><span class="badge badge-danger"> 01 </span> Mix together flour, salt, white pepper, and nutmeg. Beat eggs well, and add alternately with the milk to the dry ingredients. Mix until smooth.</li>
+                  <li class="list-group-item"><span class="badge badge-danger"> 04 </span> Saute cooked spaetzle in butter or margarine. Sprinkle chopped fresh parsley on top, and serve.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+
+  </div>
+
+</div>
+  </div>
+
+  <div class="footer">
+    <br><br>
+    <br>
+  </div>
+<script>
+var c=0; //toggling between slide to left bar
+var d=0;
+var e;
+var f;
+var g;
+var h;
+var i;
+  $("#bangladesh").click(function(){
+    if(c==0){
+
+      $("#gr").hide();
+      $("#am").hide();
+      $("#slideshow").hide(0.00001,function(){
+          $("#bd").show(200);
+          $("#bv").show();
+          $("#kc").show();
+          $("#el").show();
+        c=1;
+        d=0;
+      });
+      $("#rosted").hide();
+      $("#kacchi").hide();
+      $("#elish").hide();
+      $("#beef_vuna").hide();
+      $("#dumplings").hide();
+    }
+    else if(c==1){
+      $("#gr").hide();
+      $("#am").hide();
+      $("#slideshow").show(200,function(){
+        $("#bd").hide();
+        c=0;
+        d=0;
+      });
+      $("#rosted").hide();
+      $("#kacchi").hide();
+      $("#elish").hide();
+      $("#beef_vuna").hide();
+      $("#dumplings").hide();
+    }else{
+
+    }
+
+  });
+
+  $("#german").click(function(){
+    if(d==0){
+      $("#slideshow").hide(200,function(){
+        $("#gr").show();
+        $("#dum").show();
+        $("#rc").show();
+        d=1;
+        c=0;
+      });
+      $("#am").hide();
+      $("#bd").hide();
+      $("#rosted").hide();
+      $("#kacchi").hide();
+      $("#elish").hide();
+      $("#beef_vuna").hide();
+      $("#dumplings").hide();
+    }else if(d==1){
+      $("#slideshow").show(200,function(){
+        $("#gr").hide();
+        d=0;
+        c=0;
+      });
+      $("#am").hide();
+      $("#bd").hide();
+      $("#rosted").hide();
+      $("#kacchi").hide();
+      $("#elish").hide();
+      $("#beef_vuna").hide();
+      $("#dumplings").hide();
+    }else{
+
+    }
+
+  });
+
+  //Bangladeshi foods
+  $("#beef_details").click(function(){
+    $("#kacchi").hide();
+    $("#elish").hide();
+    $("#beef_vuna").show(20,function(){
+      $("#kc").hide(.00001);
+      $("#el").hide(.00001);
+      c=0;
+      d=0;
+    });
+    $("#rosted").hide();
+    $("#dumplings").hide();
+    g=0;
+  });
+  $("#beef_detailsClose").click(function(){
+    $("#kacchi").hide();
+    $("#elish").hide();
+    $("#beef_vuna").hide(.00001,function(){
+      $("#kc").show(200);
+      $("#el").show(200);
+      c=0;
+      d=0;
+    });
+    $("#rosted").hide();
+    $("#dumplings").hide();
+
+  });
+  $("#kacchi_details").click(function(){
+    $("#kacchi").show(20,function(){
+      $("#bv").hide(.00001);
+      $("#el").hide(.00001);
+      c=0;
+      d=0;
+    });
+    $("#beef_vuna").hide();
+    $("#rosted").hide();
+    $("#dumplings").hide();
+    $("#elish").hide();
+    h=0;
+  });
+  $("#kacchi_detailsClose").click(function(){
+    $("#kacchi").hide(.00001,function(){
+      $("#bv").show(200);
+      $("#el").show(200);
+      c=0;
+      d=0;
+    });
+    $("#beef_vuna").hide();
+    $("#rosted").hide();
+    $("#dumplings").hide();
+    $("#elish").hide();
+
+  });
+  $("#elish_details").click(function(){
+    $("#elish").show(20,function(){
+      $("#bv").hide(.00001);
+      $("#kc").hide(.00001);
+      c=0;
+      d=0;
+    });
+    $("#beef_vuna").hide();
+    $("#rosted").hide();
+    $("#dumplings").hide();
+    $("#kacchi").hide();
+    i=0;
+  });
+  $("#elish_detailsClose").click(function(){
+    $("#elish").hide(.00001,function(){
+      $("#bv").show(200);
+      $("#kc").show(200);
+      c=0;
+      d=0;
+    });
+    $("#beef_vuna").hide();
+    $("#rosted").hide();
+    $("#dumplings").hide();
+    $("#kacchi").hide();
+  });
+
+  // german foods here
+  $("#rosted_details").click(function(){
+    $("#rosted").show(20,function(){
+      $("#dum").hide(.00001);
+      c=0;
+      d=0;
+    });
+    $("#beef_vuna").hide();
+    $("#kacchi").hide()
+    $("#dumplings").hide();
+    $("#elish").hide();
+    e=0;
+  });
+
+  $("#rosted_detailsClose").click(function(){
+    $("#rosted").hide(.00001,function(){
+      $("#dum").show(200);
+      c=0;
+      d=0;
+    });
+    $("#beef_vuna").hide();
+    $("#kacchi").hide()
+    $("#dumplings").hide();
+    $("#elish").hide();
+  });
+
+  $("#dumplings_details").click(function(){
+    $("#rosted").hide();
+    $("#beef_vuna").hide();
+    $("#kacchi").hide();
+    $("#elish").hide();
+    $("#dumplings").show(20,function(){
+      $("#rc").hide(.00001);
+      c=0;
+      d=0;
+    });
+    f=0;
+  });
+  $("#dumplings_detailsClose").click(function(){
+    $("#rosted").hide();
+    $("#beef_vuna").hide();
+    $("#kacchi").hide();
+    $("#elish").hide();
+    $("#dumplings").hide(.00001,function(){
+      $("#rc").show(200);
+      c=0;
+      d=0;
+    });
+
+  });
+</script>
+</body>
+
+</html>

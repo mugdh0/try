@@ -1,0 +1,225 @@
+body{
+  background: #F8F8FF;
+  font-family: tahoma;
+}
+
+#left-side{
+  padding-left: 50px;
+  padding-top: 20px;
+  overflow-x: hidden;
+}
+
+#left-side > section{
+  padding-top: 10px;
+}
+
+#left_side_bar{
+  height: 100%;
+  width: 50px;
+  background-color: #98FB98;
+  color: #696969;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+
+}
+
+#left_side_bar .menu_icon{
+  padding-top: 10px;
+  height: 10%;
+}
+
+.menu{
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-1800%);
+  margin-left: 20px;
+}
+.menu ul{
+  position: relative;
+  padding: 0;
+  bottom: 0;
+  width: 500px;
+}
+.menu ul li{
+  position: relative;
+  font-size: 14px;
+  list-style: none;
+  float: left;
+  margin: 0px 15px;
+  font-weight: 400;
+}
+#header_bar span{
+  font-weight: 400;
+  font-size: 20px;
+  color: #663399;
+  margin-left: 50px;
+  margin-top: -5px;
+}
+.fda_food_row
+{
+ flex-wrap: nowrap;
+}
+
+.fda_food_row > .col-9
+{
+    max-width: 600px;
+    margin-left: 60px;
+}
+
+.fda_food_row > div:not(:first-child)
+{
+    margin-left: 60px;
+    margin-top: 0;
+    max-width: 600px;
+}
+
+#fda_product_tile
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fda_product_tile span
+{
+    display: block;
+}
+#fda_product_tileg
+{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fda_product_tileg span
+{
+    display: block;
+}
+.fda_food_row div.food_tile
+{
+    background-color: rgba(0,0,0,0.05);
+    font-size: 11px;
+    padding: 0 25px;
+    border-radius: 10px;
+    height: 450px;
+}
+
+/* .fda_food_row div.food_tile.active
+{
+    background-color: rgba(220,230,252,1);
+} */
+
+.fda_food_row div.food_tile img
+{
+    position: relative;
+    width: 150px;
+    border-radius: 200px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.05);
+    box-shadow: inset 0 0 25px rgba(255,255,255,0.15),
+                inset 0 4px 0 rgba(0,0,0,0.05),
+                inset 0 -4px 0 rgba(0,0,0,0.05),
+                inset 0 10px 10px rgba(0,0,0,0.09),
+                0 1px 0px rgba(0,0,0,0.1),
+                0 8px 7px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+
+.food_name
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(38, 29, 86, 1);
+    margin-bottom: 12px;
+}
+
+.food_detail
+{
+    font-size: 14px;
+    color: rgba(38, 29, 86, 0.4);
+    margin-bottom: 10px;
+}
+
+.btn-default
+{
+    border-bottom: 2px solid #0275d8;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 15px;
+}
+
+.btn-default:hover{
+  opacity: .5;
+}
+
+.col-21{
+width: 80%;
+background-color: transparent;
+
+}
+
+.ingre{
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.step{
+  width: 100%;
+  margin-left: relative;
+  margin-top: 50px;
+}
+.bigImg{
+  box-shadow: inset 0 0 25px rgba(255,255,255,0.15),
+              inset 0 4px 0 rgba(0,0,0,0.05),
+              inset 0 -4px 0 rgba(0,0,0,0.05),
+              inset 0 10px 10px rgba(0,0,0,0.09),
+              0 1px 0px rgba(0,0,0,0.1),
+              0 8px 7px rgba(0,0,0,0.15);
+  border: 5px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin-left: 100px;
+}
+.gar{
+   margin-top: 0px;
+}
+.secC{
+  margin-top: -50px;
+}
+
+.btn-primary{
+  background-color: RebeccaPurple;
+  border: 2px solid RebeccaPurple;
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.btn-primary:hover{
+  background-color: RebeccaPurple;
+  opacity: .8;
+  border: 2px solid RebeccaPurple;
+  border-bottom: 2px solid Purple;
+}
+h2{
+  margin-left: 50px;
+}
+.navlogo{
+  width: 250px;
+  height: 100px;
+}
+.check{
+  width: 25px;
+  height: 25px;
+  float: right;
+  border: 2px;
+  cursor: pointer;
+}
+.closebtn{
+  float: right;
+  border-bottom: 4px solid red;
+}
