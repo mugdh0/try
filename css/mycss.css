@@ -202,8 +202,7 @@ background-color: transparent;
 .btn-primary:hover{
   background-color: RebeccaPurple;
   opacity: .8;
-  border: 2px solid RebeccaPurple;
-  border-bottom: 2px solid Purple;
+  border: 2px solid DarkOrchid;
 }
 h2{
   margin-left: 50px;
@@ -243,4 +242,8 @@ h2{
   width:90%;
   height: 90%;
   margin-left:50px;
+}
+.center{
+  margin-top: 20px;
+  margin-left: 15%;
 }
