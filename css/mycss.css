@@ -247,3 +247,15 @@ h2{
   margin-top: 20px;
   margin-left: 15%;
 }
+.cll{
+  border-bottom: 2px solid lime;
+}
+.cla{
+  border-bottom: 2px solid purple;
+}
+.cla:hover{
+  opacity: .5;
+}
+.cll:hover{
+  opacity: .5;
+}
